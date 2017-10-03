@@ -1,11 +1,5 @@
-const Heap = require('./src/heap');
-const bubblesort = require('./src/bubblesort');
-const heapsort = require('./src/heapsort');
-const mergesort = require('./src/mergesort');
+const { mergeAll } = require('ramda');
+const algorithms = require('./src/algorithms');
+const dataStructures = require('./src/data-structures');
 
-module.exports = {
-  Heap,
-  bubblesort,
-  heapsort,
-  mergesort
-};
+module.exports = mergeAll([algorithms, dataStructures]);

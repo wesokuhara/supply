@@ -1,4 +1,8 @@
-const Heap = require('./Heap');
+/**
+http://www.geeksforgeeks.org/heap-sort/
+*/
+
+const Heap = require('../data-structures/Heap');
 
 const heapsort = a => {
   const minHeap = new Heap('min');

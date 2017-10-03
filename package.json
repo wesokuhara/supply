@@ -11,5 +11,8 @@
   "license": "ISC",
   "devDependencies": {
     "jest": "^21.2.0"
+  },
+  "dependencies": {
+    "ramda": "^0.24.1"
   }
 }

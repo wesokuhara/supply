@@ -1,3 +1,7 @@
+/**
+http://www.geeksforgeeks.org/bubble-sort/
+*/
+
 const bubblesort = a => {
   let swapped;
   for (let i = 0; i < a.length - 1; i++) {

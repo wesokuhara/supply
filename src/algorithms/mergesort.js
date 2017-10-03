@@ -1,7 +1,5 @@
 /**
-Merge sort
-
-Time complexity: O(nlogn)
+http://www.geeksforgeeks.org/merge-sort/
 */
 
 const mergesort = a => {
