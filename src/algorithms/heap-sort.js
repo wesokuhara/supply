@@ -4,8 +4,10 @@ http://www.geeksforgeeks.org/heap-sort/
 
 const Heap = require('../data-structures/Heap');
 
-const heapsort = a => {
+const heapSort = a => {
   const minHeap = new Heap('min');
+
+  // insert all values into the heap and poll off the heap
   for (let i = 0; i < a.length; i++) {
     minHeap.insert(a[i]);
   }
@@ -18,4 +20,4 @@ const heapsort = a => {
   return res;
 };
 
-module.exports = heapsort;
+module.exports = heapSort;

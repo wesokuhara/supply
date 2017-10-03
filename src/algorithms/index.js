@@ -1,9 +1,9 @@
-const bubblesort = require('./bubblesort');
-const heapsort = require('./heapsort');
-const mergesort = require('./mergesort');
+const bubbleSort = require('./bubble-sort');
+const heapSort = require('./heap-sort');
+const mergeSort = require('./merge-sort');
 
 module.exports = {
-  bubblesort,
-  heapsort,
-  mergesort
+  bubbleSort,
+  heapSort,
+  mergeSort
 };
