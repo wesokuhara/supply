@@ -1,4 +1,4 @@
-const insertionSort = require('./insertion-sort');
+const insertionSort = require('./insertionSort');
 
 describe('insertionSort()', () => {
   it('should sort an array of numbers', () => {
