@@ -15,7 +15,7 @@ Heap.prototype.insert = function(val) {
 Heap.prototype._bubbleUp = function(i) {
   if (i === 0) return;
 
-  let parentIndex = this._getParent(i);
+  const parentIndex = this._getParent(i);
 
   if (
     (this.type === MIN && this.array[i] < this.array[parentIndex]) ||
@@ -29,7 +29,7 @@ Heap.prototype._bubbleUp = function(i) {
 Heap.prototype.poll = function() {
   if (this.size() === 0) return null;
 
-  let top = this.array[0];
+  const top = this.array[0];
   this._swap(0, this._getLast());
   this.array.pop();
   this._trickleDown(0);
@@ -41,8 +41,8 @@ Heap.prototype._trickleDown = function(i) {
 
   let swapIndex = i;
   let swapVal = this.array[i];
-  let leftIndex = this._getLeft(i);
-  let rightIndex = this._getRight(i);
+  const leftIndex = this._getLeft(i);
+  const rightIndex = this._getRight(i);
 
   if (leftIndex < this.size()) {
     let lval = this.array[leftIndex];
@@ -73,7 +73,7 @@ Heap.prototype._trickleDown = function(i) {
 };
 
 Heap.prototype._swap = function(i, j) {
-  let temp = this.array[i];
+  const temp = this.array[i];
   this.array[i] = this.array[j];
   this.array[j] = temp;
 };

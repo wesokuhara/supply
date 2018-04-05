@@ -1,7 +1,7 @@
 const { find, propEq, uniq, pluck, sum } = require('ramda');
 
 // Returns the first element of the list that matches, or undefined if no element matches.
-var arr = [{ a: 1 }, { a: 2 }, { a: 3 }];
+const arr = [{ a: 1 }, { a: 2 }, { a: 3 }];
 find(propEq('a', 2))(arr); //=> {a: 2}
 find(propEq('a', 4))(arr); //=> undefined
 
