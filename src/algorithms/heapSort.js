@@ -1,18 +1,17 @@
 /**
-http://www.geeksforgeeks.org/heap-sort/
-*/
-
+ * http://www.geeksforgeeks.org/heap-sort/
+ * Insert all values into the heap and poll off the heap to return the values in sorted order.
+ */
 const Heap = require('../data-structures/Heap');
 
-const heapSort = a => {
-  const minHeap = new Heap('min');
+const heapSort = arr => {
+  const minHeap = new Heap();
 
-  // insert all values into the heap and poll off the heap
-  for (let i = 0; i < a.length; i++) {
-    minHeap.insert(a[i]);
+  for (let i = 0; i < arr.length; i++) {
+    minHeap.insert(arr[i]);
   }
 
-  let res = [];
+  const res = [];
   while (!minHeap.isEmpty()) {
     res.push(minHeap.poll());
   }

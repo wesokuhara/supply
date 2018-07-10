@@ -1,16 +1,15 @@
 /**
-http://www.geeksforgeeks.org/merge-sort/
-*/
+ * http://www.geeksforgeeks.org/merge-sort/
+ * Recursively split the array in half and sort the halves.  Then merge the halves together in sorted order.
+ */
+const mergeSort = arr => {
+  if (arr.length < 2) return arr;
 
-const mergeSort = a => {
-  if (a.length < 2) return a;
+  const m = parseInt(arr.length / 2);
+  const left = arr.slice(0, m);
+  const right = arr.slice(m, arr.length);
 
-  // recursively split the array and sort the halves
-  let m = parseInt(a.length / 2);
-  let l = a.slice(0, m);
-  let r = a.slice(m, a.length);
-
-  return merge(mergeSort(l), mergeSort(r));
+  return merge(mergeSort(left), mergeSort(right));
 };
 
 const merge = (left, right) => {

@@ -1,27 +1,25 @@
 /**
-http://www.geeksforgeeks.org/bubble-sort/
-*/
-
-const bubbleSort = a => {
-  // always check the array once
-  // stop when there are no swaps
+ * http://www.geeksforgeeks.org/bubble-sort/
+ * Traverse the array at least once.  If elements were swapped at least one, repeat.  Else the array is sorted.
+ */
+const bubbleSort = arr => {
   let swapped = true;
 
   while (swapped) {
     swapped = false;
 
-    for (let i = 0; i < a.length - 1; i++) {
-      if (a[i] > a[i + 1]) {
-        let temp = a[i];
-        a[i] = a[i + 1];
-        a[i + 1] = temp;
+    for (let i = 0; i < arr.length - 1; i++) {
+      if (arr[i] > arr[i + 1]) {
+        const temp = arr[i];
+        arr[i] = arr[i + 1];
+        arr[i + 1] = temp;
 
         swapped = true;
       }
     }
   }
 
-  return a;
+  return arr;
 };
 
 module.exports = bubbleSort;

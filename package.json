@@ -3,12 +3,12 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "author": "",
+  "license": "ISC",
   "scripts": {
     "test": "jest",
     "watch-test": "jest --watchAll --verbose"
   },
-  "author": "",
-  "license": "ISC",
   "devDependencies": {
     "jest": "^21.2.0"
   },
