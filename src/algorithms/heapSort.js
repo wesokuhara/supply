@@ -8,7 +8,7 @@ const heapSort = arr => {
   const minHeap = new Heap();
 
   for (let i = 0; i < arr.length; i++) {
-    minHeap.insert(arr[i]);
+    minHeap.add(arr[i]);
   }
 
   const res = [];
